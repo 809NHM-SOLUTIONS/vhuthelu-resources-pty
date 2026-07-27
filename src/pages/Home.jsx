@@ -1,33 +1,51 @@
+import { useEffect, useState } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import "./Home.css";
+import Hero1 from "../assets/cattle.jpg";
+import Hero2 from "../assets/crop.jpg";
+
+
+const heroImages = [
+  "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1200&h=1400&fit=crop&q=80",
+  "https://images.unsplash.com/photo-1542826438-bd32f43d626f?w=1200&h=1400&fit=crop&q=80",
+  "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=1200&h=1400&fit=crop&q=80",
+  "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1200&h=1400&fit=crop&q=80",
+  "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=1200&h=1400&fit=crop&q=80",
+  Hero1,
+  Hero2,
+];
 
 function Home() {
+  const [activeSlide, setActiveSlide] = useState(0);
+  const [paused, setPaused] = useState(false);
+
+  useEffect(() => {
+    if (paused) return;
+    const interval = setInterval(() => {
+      setActiveSlide((prev) => (prev + 1) % heroImages.length);
+    }, 4000);
+    return () => clearInterval(interval);
+  }, [paused]);
+
   return (
     <>
       <Header />
 
       <main className="home-main">
-        {/* Hero Section with Background Image */}
+        {/* Hero Section - split layout */}
         <section className="hero-section">
-          <div className="hero-bg">
-            <img 
-              src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1920&h=1080&fit=crop&q=80" 
-              alt="Vhuthelu Resources Hero"
-              className="hero-bg-image"
-            />
-            <div className="hero-overlay"></div>
-          </div>
-          <div className="container">
-            <div className="hero-content">
+          <div className="hero-text-panel">
+            <div className="hero-text-inner">
               <span className="hero-tag">INNOVATE • SUSTAIN • IMPACT</span>
               <h1 className="hero-title">
-                Building Solutions. <br />
-                <span className="highlight">Creating Value.</span> Sustaining Future.
+                Building Solutions.<br />
+                <span className="highlight">Creating Value.</span><br />
+                Sustaining Future.
               </h1>
               <p className="hero-description">
-                Vhuthelu Resources (PTY) Ltd provides innovative and sustainable 
-                solutions that empower businesses, communities and industries to 
+                Vhuthelu Resources (PTY) Ltd provides innovative and sustainable
+                solutions that empower businesses, communities and industries to
                 grow responsibly.
               </p>
               <div className="hero-buttons">
@@ -35,9 +53,45 @@ function Home() {
                   Explore Our Services →
                 </a>
                 <a href="/about" className="btn btn-outline">
-                  Watch Our Story
+                  <i className="fas fa-play-circle"></i> Watch Our Story
                 </a>
               </div>
+            </div>
+          </div>
+
+          <div
+            className="hero-image-panel"
+            onMouseEnter={() => setPaused(true)}
+            onMouseLeave={() => setPaused(false)}
+          >
+            <div
+              className="hero-image-track"
+              style={{
+                width: `${heroImages.length * 100}%`,
+                transform: `translateX(-${(activeSlide / heroImages.length) * 100}%)`,
+              }}
+            >
+              {heroImages.map((src, i) => (
+                <img
+                  key={src}
+                  src={src}
+                  alt={`Vhuthelu Resources ${i + 1}`}
+                  className="hero-image"
+                  style={{ width: `${100 / heroImages.length}%` }}
+                />
+              ))}
+            </div>
+
+            <div className="hero-image-dots">
+              {heroImages.map((_, i) => (
+                <button
+                  key={i}
+                  type="button"
+                  className={`hero-dot ${i === activeSlide ? "active" : ""}`}
+                  onClick={() => setActiveSlide(i)}
+                  aria-label={`Show slide ${i + 1}`}
+                />
+              ))}
             </div>
           </div>
         </section>
