@@ -523,3 +523,355 @@
     font-size: 20px;
   }
 }
+/* Organized Information Details Card Layout */
+.info-details-box {
+  background: #ffffff;
+  border: 1px solid rgba(7, 95, 48, 0.12);
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+  max-width: 800px;
+  margin: 0 auto;
+  width: 100%;
+}
+.info-details-box h3 {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--about-ink);
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid rgba(7, 95, 48, 0.1);
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px 24px;
+}
+
+.info-row {
+  display: flex;
+  flex-direction: column;
+  background: #fdfdfd;
+  padding: 12px 16px;
+  border-radius: 8px;
+  border: 1px solid #eee;
+}
+
+.info-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--primary-green);
+  letter-spacing: 0.5px;
+  margin-bottom: 4px;
+}
+
+.info-value {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--about-ink);
+}
+
+/* ===== Vision & Mission Cards ===== */
+.vision-mission-section {
+  margin-top: 60px; 
+  margin-bottom: 76px;
+}
+
+.vision-mission-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.vm-card {
+  background: #ffffff;
+  border: 1px solid rgba(7, 95, 48, 0.12);
+  border-radius: 16px;
+  padding: 36px 30px;
+  box-shadow: 0 8px 24px rgba(7, 95, 48, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.vm-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 32px rgba(7, 95, 48, 0.12);
+  border-color: var(--primary-green);
+}
+
+.vm-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  background: rgba(7, 95, 48, 0.08);
+  color: var(--primary-green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.vm-card h3 {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--about-ink);
+  margin-bottom: 12px;
+}
+
+.vm-card p {
+  font-size: 15px;
+  color: var(--about-muted);
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* ===== 2-Column Core Values Section ===== */
+.core-values-section {
+  margin-bottom: 76px;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-title h3 {
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: var(--about-ink);
+}
+
+.title-underline {
+  width: 56px;
+  height: 3px;
+  background: var(--primary-green);
+  border-radius: 2px;
+  margin: 12px auto 0;
+}
+
+/* 2-Column Grid Layout for Core Values */
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 26px;
+}
+
+.value-card {
+  background: #ffffff;
+  border: 1px solid rgba(7, 95, 48, 0.1);
+  border-radius: 16px;
+  padding: 30px 26px;
+  transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--primary-green);
+  box-shadow: 0 16px 36px rgba(7, 95, 48, 0.12);
+}
+
+.value-card .card-icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background: rgba(7, 95, 48, 0.08);
+  color: var(--primary-green);
+  font-size: 20px;
+  margin-bottom: 16px;
+  transition: all 0.35s ease;
+}
+
+.value-card:hover .card-icon {
+  background: var(--primary-green);
+  color: #ffffff;
+}
+
+.value-card h4 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--about-ink);
+  margin-bottom: 10px;
+}
+
+.value-card p {
+  font-size: 14px;
+  color: var(--about-muted);
+  line-height: 1.65;
+  margin: 0;
+}
+
+/* ===== How We Work ===== */
+.how-we-work {
+  margin-bottom: 76px;
+}
+
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 26px;
+}
+
+.work-card {
+  position: relative;
+  background: #ffffff;
+  border: 1px solid rgba(7, 95, 48, 0.1);
+  border-radius: 16px;
+  padding: 34px 26px;
+  overflow: hidden;
+  transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+}
+
+.work-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--primary-green);
+  box-shadow: 0 18px 40px rgba(7, 95, 48, 0.14);
+}
+
+.work-card h4 {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--about-ink);
+  margin-bottom: 10px;
+}
+
+.work-card p {
+  font-size: 14px;
+  color: var(--about-muted);
+  line-height: 1.65;
+  margin: 0;
+}
+
+/* Diagonal shine sweep on hover */
+.card-shine {
+  position: absolute;
+  top: 0;
+  left: -60%;
+  width: 40%;
+  height: 100%;
+  background: linear-gradient(120deg, transparent, rgba(46, 170, 61, 0.12), transparent);
+  transform: skewX(-20deg);
+  transition: left 0.6s ease;
+  pointer-events: none;
+}
+
+.work-card:hover .card-shine {
+  left: 130%;
+}
+
+/* ===== Commitment ===== */
+.commitment {
+  background: linear-gradient(135deg, var(--primary-green) 0%, #0a3d20 100%);
+  border-radius: 22px;
+  padding: 52px 56px;
+  margin-bottom: 76px;
+  box-shadow: 0 20px 50px rgba(7, 95, 48, 0.22);
+}
+
+.commitment-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 26px;
+}
+
+.commitment-icon {
+  flex-shrink: 0;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.14);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.commitment-text h3 {
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.commitment-lead {
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.commitment-body {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.82);
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* ===== Footer Strip ===== */
+.about-footer {
+  text-align: center;
+}
+
+.about-footer .footer-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  font-size: 14px;
+  color: var(--about-muted);
+  font-weight: 600;
+}
+
+.about-footer .footer-info i {
+  color: var(--primary-green);
+  margin-right: 6px;
+}
+
+.about-footer .separator {
+  color: rgba(7, 95, 48, 0.35);
+  font-size: 10px;
+}
+
+/* ===== Animations ===== */
+@keyframes aboutFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== Responsive Breakpoints ===== */
+@media (max-width: 1024px) {
+  .work-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .vision-mission-grid,
+  .values-grid,
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .work-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .commitment-content {
+    flex-direction: column;
+  }
+}

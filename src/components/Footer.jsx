@@ -24,8 +24,7 @@ function Footer() {
               </div>
             </NavLink>
             <p className="footer-description">
-              Empowering communities through sustainable mining, 
-              construction, and logistics solutions across South Africa.
+               Empowering People.Enabling Technology.Enhancing the Future
             </p>
             <div className="footer-socials">
               <a href="#" aria-label="Facebook" className="social-link">
@@ -62,11 +61,12 @@ function Footer() {
           <div className="footer-section services-section">
             <h4 className="footer-heading">Our Services</h4>
             <ul className="footer-links">
-              <li><a href="#">Mining Operations</a></li>
-              <li><a href="#">Construction</a></li>
-              <li><a href="#">Logistics & Transport</a></li>
-              <li><a href="#">Equipment Rental</a></li>
-              <li><a href="#">Project Management</a></li>
+              <li><a href="#">Software Development</a></li>
+              <li><a href="#">IT Support</a></li>
+              <li><a href="#">Cloud & Network solutions</a></li>
+              <li><a href="#">Skills Development</a></li>
+              <li><a href="#">Workforce Solutions</a></li>
+              <li><a href="#">Cybersecurity Training</a></li>
             </ul>
           </div>
 
@@ -80,11 +80,11 @@ function Footer() {
               </li>
               <li>
                 <i className="fas fa-phone"></i>
-                <span>+27 (0) 11 234 5678</span>
+                <span>083 474 9155</span>
               </li>
               <li>
                 <i className="fas fa-envelope"></i>
-                <span>info@vhutheluresources.co.za</span>
+                <span>vhutheluresources@gmail.com</span>
               </li>
               <li>
                 <i className="fas fa-clock"></i>
@@ -108,7 +108,7 @@ function Footer() {
           </span>
           <span className="separator">◆</span>
           <span>
-            <i className="fas fa-star"></i> B-BBEE Level 1
+            <i ></i> B-BBEE Level 1
           </span>
           <span className="separator">◆</span>
           <span>

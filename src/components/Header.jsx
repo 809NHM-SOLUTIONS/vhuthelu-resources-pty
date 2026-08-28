@@ -72,10 +72,20 @@ function Header() {
             Contact
           </NavLink>
           
-          {/* Contact Button inside nav for mobile */}
-          <NavLink to="/contact" className="header-button" onClick={closeMenu}>
-            Get in Touch
-            <span className="button-arrow">→</span>
+          
+          <NavLink 
+            to="/projects" 
+            className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`}
+            onClick={closeMenu}
+          >
+            Projects
+          </NavLink>
+           <NavLink 
+            to="/partnership" 
+            className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`}
+            onClick={closeMenu}
+          >
+            Partnership
           </NavLink>
         </nav>
       </div>

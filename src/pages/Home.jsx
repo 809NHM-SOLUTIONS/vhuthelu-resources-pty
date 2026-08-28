@@ -7,13 +7,13 @@ import Hero2 from "../assets/crop.jpg";
 
 
 const heroImages = [
-  "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1200&h=1400&fit=crop&q=80",
-  "https://images.unsplash.com/photo-1542826438-bd32f43d626f?w=1200&h=1400&fit=crop&q=80",
-  "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=1200&h=1400&fit=crop&q=80",
-  "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1200&h=1400&fit=crop&q=80",
-  "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=1200&h=1400&fit=crop&q=80",
-  Hero1,
-  Hero2,
+  "https://static.wixstatic.com/media/14cc91_17fdf226d70846baa3be5d3bb0b0bb12~mv2.jpg/v1/fill/w_722,h_634,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/ai-generated-IMAGE.jpg",
+  "https://wearebluegrass.com/wp-content/uploads/2024/05/importance-of-graphic-design-services-in-digital-marketing-2.png",
+  "https://www.cnp.net/wp-content/uploads/2025/02/AdobeStock_727353391.jpeg",
+  "https://educeptiveconsulting.co.za/wp-content/uploads/2025/11/pexels-photo-5935791.jpeg",
+  "https://www.tutorialspoint.com/basics_of_computer_science/images/programmer.jpg",
+  "https://resources.finalsite.net/images/t_image_size_4/v1593113701/mntechnologycom/mdyhpkjgktchgfqy5om2/WorkbasedLearning.png",
+  "https://www.umweltbundesamt.de/system/files/medien/376/bilder/greenit_j-mel_adobestock_315164682_5260x2864_px.jpeg",
 ];
 
 function Home() {
@@ -39,19 +39,22 @@ function Home() {
             <div className="hero-text-inner">
               <span className="hero-tag">INNOVATE • SUSTAIN • IMPACT</span>
               <h1 className="hero-title">
-                Building Solutions.<br />
-                <span className="highlight">Creating Value.</span><br />
-                Sustaining Future.
+                Empowering People.<br />
+                <span className="highlight">Enabling Technology.</span><br />
+                Enhancing the Future.
               </h1>
               <p className="hero-description">
-                Vhuthelu Resources (PTY) Ltd provides innovative and sustainable
-                solutions that empower businesses, communities and industries to
-                grow responsibly.
+                Vhuthelu Resources is a 100% Black-owened south african technology and workforce solutions company delivering
+                innovative IT ,digital skills development,training and workforce solutions.
               </p>
               <div className="hero-buttons">
                 <a href="/services" className="btn btn-primary">
                   Explore Our Services →
                 </a>
+                <a href="/contact" className="btn btn-primary">
+                    Contact Us →
+                </a>
+                <br />
                 <a href="/about" className="btn btn-outline">
                   <i className="fas fa-play-circle"></i> Watch Our Story
                 </a>
@@ -95,61 +98,82 @@ function Home() {
             </div>
           </div>
         </section>
+        {/* About Preview Section */}
+        <section className="about-preview-section">
+          <div className="container text-center">
+            <div className="section-header">
+              <h2>ABOUT US</h2>
+              <p className="section-subtitle">Technology. Skills. People.</p>
+            </div>
+            <p className="section-description">
+              Vhuthelu Resources (Pty) Ltd is a 100% Black-owned South African company specialising in Information Technology, digital skills development, training and workforce solutions. We provide practical, client-focused technology solutions that help organisations improve operations, productivity and digital capabilities.
+            </p>
+            <div className="text-center">
+              <a href="/about" className="btn btn-secondary">
+                Learn More →
+              </a>
+            </div>
+          </div>
+        </section>
 
         {/* Why Choose Us Section with Icons */}
         <section className="why-choose-section">
           <div className="container">
             <div className="section-header">
-              <h2>WHY CHOOSE US</h2>
+              <h2>WHY CHOOSE VHUTHELU RESOURCES</h2>
               <p className="section-subtitle">
-                Driven by Excellence. Focused on Impact.
+                Innovative Solutions. Skilled Professionals. Sustainable Practices.
               </p>
             </div>
-            <p className="section-description">
-              We combine expertise, innovation and sustainability to deliver 
-              solutions that create real and lasting impact.
-            </p>
-            <div className="text-center">
-              <a href="/about" className="btn btn-secondary">
-                Learn More About Us →
-              </a>
-            </div>
+          
+            
 
             <div className="features-grid">
               <div className="feature-card">
                 <div className="feature-icon">
-                  <i className="fas fa-users"></i>
+                  <i className="fas fa-bullseye"></i>
                 </div>
-                <h3>Expert Team</h3>
-                <p>Skilled professionals with proven experience and a passion for excellence.</p>
+                <h3>Client Focus</h3>
+                <p>Practical and relevant solutions designed around each client's environment and requirements.</p>
               </div>
+
               <div className="feature-card">
                 <div className="feature-icon">
                   <i className="fas fa-lightbulb"></i>
                 </div>
-                <h3>Innovative Solutions</h3>
-                <p>Smart, practical and customised solutions tailored to your needs.</p>
+                <h3>Innovation</h3>
+                <p>We use technology and modern approaches to develop progressive solutions.</p>
               </div>
+
               <div className="feature-card">
                 <div className="feature-icon">
-                  <i className="fas fa-leaf"></i>
+                  <i className="fas fa-user-graduate"></i>
                 </div>
-                <h3>Sustainability First</h3>
-                <p>Committed to environmental responsibility and sustainable business practices.</p>
+                <h3>Empowerment</h3>
+                <p>We support skills development, digital inclusion and opportunities for individuals and organisations.</p>
               </div>
+
               <div className="feature-card">
                 <div className="feature-icon">
-                  <i className="fas fa-handshake"></i>
+                  <i className="fas fa-shield-alt"></i>
                 </div>
-                <h3>Value & Integrity</h3>
-                <p>Building long-term relationships through transparency, trust and quality service.</p>
+                <h3>Professionalism</h3>
+                <p>We operate with integrity, accountability and a commitment to quality.</p>
+              </div>
+
+              <div className="feature-card">
+                <div className="feature-icon">
+                  <i className="fas fa-chart-line"></i>
+                </div>
+                <h3>Scalable Solutions</h3>
+                <p>Our solutions are designed to grow with the changing needs of our clients.</p>
               </div>
             </div>
           </div>
         </section>
 
         {/* Gallery/Portfolio Section */}
-        <section className="gallery-section">
+       <section className="gallery-section">
           <div className="container">
             <div className="section-header">
               <h2>Our Work in Action</h2>
@@ -158,43 +182,45 @@ function Home() {
             <div className="gallery-grid">
               <div className="gallery-item">
                 <img 
-                  src="https://images.unsplash.com/photo-1542826438-bd32f43d626f?w=600&h=400&fit=crop" 
-                  alt="Mining Operations"
+                  src="https://www.tutorialspoint.com/basics_of_computer_science/images/programmer.jpg"
+                  alt=" Information Technology Solutions"
                 />
                 <div className="gallery-overlay">
-                  <span>Mining Operations</span>
+                  <span>Information Technology Solutions</span>
                 </div>
               </div>
               <div className="gallery-item">
                 <img 
-                  src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=600&h=400&fit=crop" 
-                  alt="Construction"
+                  src= "https://cdn.prod.website-files.com/62752da756f73572fb31bbd1/66cca2996764d79b16d13f1a_What%20Digital%20Skill%20Development%20Means.webp" 
+                  alt=" Digital Skills & Training"
                 />
                 <div className="gallery-overlay">
-                  <span>Construction</span>
+                  <span>Digital Skills & Training</span>
                 </div>
               </div>
               <div className="gallery-item">
                 <img 
-                  src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=600&h=400&fit=crop" 
-                  alt="Logistics"
+                  src= "https://resources.finalsite.net/images/t_image_size_4/v1593113701/mntechnologycom/mdyhpkjgktchgfqy5om2/WorkbasedLearning.png"
+                  alt=" Workforce Solutions "
                 />
                 <div className="gallery-overlay">
-                  <span>Logistics</span>
+                  <span>Workforce Solutions</span>
                 </div>
               </div>
               <div className="gallery-item">
                 <img 
-                  src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=600&h=400&fit=crop" 
-                  alt="Sustainability"
+                  src="https://wearebluegrass.com/wp-content/uploads/2024/05/importance-of-graphic-design-services-in-digital-marketing-2.png"
+                  alt="Creative & Digital Services "
                 />
                 <div className="gallery-overlay">
-                  <span>Sustainability</span>
+                  <span>Creative & Digital Services</span>
                 </div>
               </div>
             </div>
           </div>
         </section>
+
+      
 
         {/* Stats Section */}
         <section className="stats-section">

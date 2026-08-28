@@ -14,17 +14,17 @@ const CONTACT_INFO = [
   {
     icon: 'fas fa-phone-alt',
     title: 'Phone',
-    details: ['+27 123 456 789', '+27 987 654 321'],
+    details: ['083 474 9155'],
   },
   {
     icon: 'fas fa-envelope',
     title: 'Email',
-    details: ['info@vhuthelu.co.za', 'support@vhuthelu.co.za'],
+    details: ['info@vhuthelu.co.za', 'vhutheluresources@gmail.com'],
   },
   {
     icon: 'fas fa-map-marker-alt',
     title: 'Address',
-    details: ['Gauteng, South Africa', 'Johannesburg, 2000'],
+    details: ['111 Outemiqua Flats','721 Church Street', 'Arcadia Gauteng 0083'],
   },
   {
     icon: 'fas fa-clock',
@@ -86,10 +86,10 @@ export default function Contact() {
           <div className="container">
             <div className="contact-hero-content">
               <span className="contact-hero-tag">GET IN TOUCH</span>
-              <h1>Let's <span className="highlight">Connect</span></h1>
+              <h1>Let's <span className="highlight">Work Together</span></h1>
               <p className="contact-hero-description">
-                Have a question or project in mind? Reach out to us — we're here 
-                to help you find the right solution for your business needs.
+               Whether you need IT Solutions, digital Skills development, workforce support or a technology partner,
+               Vhuthelu Resources is ready to work with you.
               </p>
             </div>
           </div>
@@ -142,6 +142,18 @@ export default function Contact() {
                         required 
                       />
                     </div>
+                    <div className="form-group">
+                      <label htmlFor="company">
+                        <i className="fas fa-building"></i> Company
+                      </label>
+                      <input 
+                        type="text" 
+                        id="company"
+                        name="company" 
+                        placeholder="Enter your company name" 
+                        required 
+                      />
+                    </div>
 
                     <div className="form-group">
                       <label htmlFor="email">
@@ -169,6 +181,20 @@ export default function Contact() {
                     </div>
 
                     <div className="form-group">
+                      <label htmlFor="service_required">
+                        <i className="fas fa-handshake"></i> Service Required
+                      </label>
+                      <input 
+                        type="text" 
+                        id="service_required"
+                        name="service_required" 
+                        placeholder="What service are you interested in?" 
+                        required 
+                      />
+                    </div>
+
+
+                    <div className="form-group">
                       <label htmlFor="message">
                         <i className="fas fa-comment"></i> Message
                       </label>
@@ -188,7 +214,7 @@ export default function Contact() {
                         </>
                       ) : (
                         <>
-                          <i className="fas fa-paper-plane"></i> Send Message
+                          <i className="fas fa-paper-plane"></i> Send Enquiry
                         </>
                       )}
                     </button>
