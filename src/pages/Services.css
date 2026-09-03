@@ -223,7 +223,7 @@
   background: #f9fbf9;
   border-radius: 16px;
   overflow: hidden;
-  border: 1px solid #eef3ee;
+  border: 2px solid #eef3ee;
   transition: all 0.4s ease;
   opacity: 0;
   transform: translateY(30px);
@@ -315,7 +315,61 @@
   font-size: 12px;
   font-weight: 600;
 }
+.service-features-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0 0;
+  text-align: left;
+}
 
+.service-feature-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.6rem;
+  font-size: 0.9rem;
+  color: #2d3748;
+}
+
+.service-feature-item i {
+  color: #10b981; /* Green checkmark color */
+  font-size: 0.95rem;
+  flex-shrink: 0;
+}
+/*===**/
+/* Card Container Base & Smooth Transition */
+.service-card {
+  border: 2px solid transparent;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+/* Card Hover Effect - Lift & Shadow */
+.service-card:hover {
+  transform: translateY(-8px);
+  border-color: #10b981;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* Image Container Base */
+.service-card-image {
+  overflow: hidden; 
+  position: relative;
+}
+
+/* Image Base Transition */
+.service-card-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+/* Image Hover Zoom Animation */
+.service-card:hover .service-card-image img {
+  transform: scale(1.08);
+   
+}
 /* ============================================
    STATS SECTION
    ============================================ */

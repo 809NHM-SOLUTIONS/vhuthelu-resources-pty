@@ -39,12 +39,13 @@ const WORK_ITEMS = [
   {
     icon: "fas fa-link",
     title: "Integrated Execution",
-    description: "Energy, mining, agriculture, and IT unified under one coordinated structure.",
+    description: "Software, cloud infrastructure, network systems, and IT operations unified under one scalable architecture."
   },
   {
     icon: "fas fa-clock",
     title: "Operational Reliability",
-    description: "24/7 dispatch capability, dependable supply chains, and disciplined service delivery.",
+    description: "24/7 technical backup, smooth digital workflows, and systems that just work."
+
   },
   {
     icon: "fas fa-shield-alt",

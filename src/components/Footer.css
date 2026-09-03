@@ -8,6 +8,9 @@
   --footer-border: rgba(255, 255, 255, 0.08);
   --footer-shadow: 0 -5px 30px rgba(0, 0, 0, 0.3);
   --transition-smooth: 0.3s ease;
+  --primary-green: #35af3d;
+  --primary-green-light: #52c45a;
+  --text-white: #ffffff;
 }
 
 /* ===== Footer Container ===== */
@@ -31,12 +34,15 @@
   grid-template-columns: 2fr 1fr 1fr 1.5fr;
   gap: 40px;
   margin-bottom: 50px;
+  align-items: flex-start;
 }
 
 /* ===== Footer Sections ===== */
 .footer-section {
   display: flex;
   flex-direction: column;
+  margin-top: 0;
+  padding-top: 0;
 }
 
 .footer-heading {
@@ -172,27 +178,26 @@
   list-style: none;
   padding: 0;
   margin: 0;
+  background-color: transparent; 
 }
 
 .footer-contact li {
   display: flex;
   align-items: flex-start;
   gap: 14px;
-  margin-bottom: 16px;
+  margin-bottom: 2px;
   font-size: 14px;
   line-height: 1.6;
 }
 
 .footer-contact li i {
-  color: var(--primary-green-light);
+  color: var(--primary-green);
   font-size: 18px;
   margin-top: 2px;
   min-width: 20px;
 }
 
-.footer-contact li span {
-  color: var(--footer-text);
-}
+
 
 /* ===== Footer Decoration (Dots) ===== */
 .footer-decoration {
@@ -424,4 +429,22 @@
 .footer-contact li:hover i {
   transform: scale(1.2);
   transition: transform var(--transition-smooth);
+}
+/* remove m oooo===== Override fixes to remove the white background ===== */
+.footer-main > div,
+.footer-section,
+.footer-contact-section,
+.footer-contact,
+.footer-contact li {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+/* Ensure the contact header and items retain visibility over the dark background */
+.footer-section .footer-heading {
+  color: var(--footer-heading) !important;
+}
+
+.footer-contact li {
+  color: var(--footer-text) !important;
 }

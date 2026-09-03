@@ -1,24 +1,28 @@
-export default function ServiceCard({ image, icon, title, description, features, delay = 0 }) {
+import React from 'react';
+
+export default function ServiceCard({ image, icon, title, description, features, delay }) {
   return (
     <div className="service-card-wrapper" style={{ animationDelay: `${delay}ms` }}>
       <div className="service-card-image">
-        <img src={image} loading="lazy" alt={title} />
-        <div className="service-card-icon">
+        <img src={image} alt={title} />
+      </div>
+
+      <div className="service-card-body">
+        <div className="service-icon">
           <i className={icon}></i>
         </div>
-      </div>
-      <div className="service-card-body">
+
         <h3>{title}</h3>
         <p>{description}</p>
-        {features && features.length > 0 && (
-          <div className="service-card-features">
+
+       <ul className="service-features-list">
             {features.map((feature, index) => (
-              <span key={index} className="service-card-feature-tag">
-                {feature}
-              </span>
+              <li key={index} className="service-feature-item">
+                <i className="fas fa-check-circle"></i>
+                <span>{feature.trim()}</span>
+              </li>
             ))}
-          </div>
-        )}
+          </ul>
       </div>
     </div>
   );

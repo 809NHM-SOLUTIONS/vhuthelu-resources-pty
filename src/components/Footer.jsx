@@ -71,12 +71,13 @@ function Footer() {
           </div>
 
           {/* Contact Info */}
-          <div className="footer-section contact-section">
+          <div className="footer-section">
             <h4 className="footer-heading">Contact Us</h4>
             <ul className="footer-contact">
               <li>
                 <i className="fas fa-map-marker-alt"></i>
-                <span>123 Main Street, Johannesburg<br />Gauteng, 2000, South Africa</span>
+                <span>111 Outeniqua Flats 721 Church Street Arcadia<br></br> Gauteng  0083</span>
+                <span>23 Corridor cres  Ben Fleur <br></br>EMalahleni 1035  Mpumalanga </span>
               </li>
               <li>
                 <i className="fas fa-phone"></i>

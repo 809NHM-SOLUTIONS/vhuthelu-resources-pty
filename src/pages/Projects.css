@@ -149,6 +149,63 @@
 .project-btn:hover i {
   transform: translateX(5px);
 }
+/* Card Container */
+.project-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #ffffff;
+}
+
+/* Dedicated Image Wrapper */
+.project-card-image {
+  width: 100%;
+  height: 180px; 
+}
+
+.project-card-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+    object-fit: cover; 
+}
+/* Card Image Header Container */
+.project-card-image {
+  width: 100%;
+  height: 160px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px; 
+  overflow: hidden;
+}
+
+/* Logo Image Styling */
+.application-card-image img {
+  max-width: 80%; 
+  max-height: 100px;
+  width: auto;
+  height: auto;
+  object-fit: contain; 
+}
+.application-card-image{
+
+   max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain; /* Prevents cropping and keeps the full image visible */
+  display: block;
+}
+/* Header Alignment */
+.project-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px 8px;
+}
 /* Platform Card Specific Enhancements */
 .mb-5 {
   margin-bottom: 3.5rem;
@@ -184,4 +241,21 @@
   height: 100%;
   object-fit: cover;
   display: block;
+}
+.application-card {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.application-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--primary-green, #0a3d20);
+  box-shadow: 0 10px 24px rgba(7, 95, 48, 0.15);
 }

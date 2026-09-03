@@ -64,13 +64,7 @@ function Header() {
           >
             Services
           </NavLink>
-          <NavLink 
-            to="/contact" 
-            className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`}
-            onClick={closeMenu}
-          >
-            Contact
-          </NavLink>
+          
           
           
           <NavLink 
@@ -86,6 +80,13 @@ function Header() {
             onClick={closeMenu}
           >
             Partnership
+          </NavLink>
+          <NavLink 
+            to="/contact" 
+            className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`}
+            onClick={closeMenu}
+          >
+            Contact
           </NavLink>
         </nav>
       </div>

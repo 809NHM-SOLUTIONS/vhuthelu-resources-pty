@@ -19,12 +19,14 @@ const CONTACT_INFO = [
   {
     icon: 'fas fa-envelope',
     title: 'Email',
-    details: ['info@vhuthelu.co.za', 'vhutheluresources@gmail.com'],
+    details: ['info@vhutheluresources.co.za', 'vhutheluresources@gmail.com'],
   },
   {
     icon: 'fas fa-map-marker-alt',
     title: 'Address',
-    details: ['111 Outemiqua Flats','721 Church Street', 'Arcadia Gauteng 0083'],
+    details: ['111 Outeniqua Flats, 721 Church Street, Arcadia Gauteng, 0083'
+     , '23 Corridor cres, Ben Fleur, EMalahleni 1035, Mpumalanga'
+    ],
   },
   {
     icon: 'fas fa-clock',
