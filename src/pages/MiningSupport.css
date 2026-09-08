@@ -1331,7 +1331,6 @@
 }
 
 .service-feature-item i {
-  color: #10b981; /* Green checkmark color */
   font-size: 0.95rem;
   flex-shrink: 0;
 }

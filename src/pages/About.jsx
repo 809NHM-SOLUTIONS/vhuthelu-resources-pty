@@ -39,23 +39,26 @@ const WORK_ITEMS = [
   {
     icon: "fas fa-link",
     title: "Integrated Execution",
-    description: "Software, cloud infrastructure, network systems, and IT operations unified under one scalable architecture."
+    description:
+      "Energy, mining, agriculture, and IT unified under one coordinated structure.",
   },
   {
     icon: "fas fa-clock",
     title: "Operational Reliability",
-    description: "24/7 technical backup, smooth digital workflows, and systems that just work."
-
+    description:
+      "24/7 technical backup, smooth digital workflows, and systems that just work.",
   },
   {
     icon: "fas fa-shield-alt",
     title: "Enterprise-Grade Standards",
-    description: "B-BBEE Level 1 compliant. 100% black-owned. Governance-focused and performance-driven.",
+    description:
+      "B-BBEE Level 1 compliant. 100% black-owned. Governance-focused and performance-driven.",
   },
   {
     icon: "fas fa-microchip",
     title: "Future-Focused Innovation",
-    description: "Technology-enabled systems that enhance productivity and measurable outcomes.",
+    description:
+      "Technology-enabled systems that enhance productivity and measurable outcomes.",
   },
 ];
 
@@ -91,41 +94,52 @@ export default function About() {
 
       <section id="about" className="about-section">
         <div className="container">
-          {/* Main Title Banner */}
-          <div className="about-header">
-            <div className="header-decoration">
-              <span className="line"></span>
-              <i className="fas fa-gem"></i>
-              <span className="line"></span>
+          {/* Main Title Banner Matching Image */}
+          <div className="about-hero">
+            <div className="hero-divider">
+              <span className="line dark-line"></span>
+              <span className="line green-line"></span>
             </div>
-            <h2>ABOUT US</h2>
-            <p className="sub-line">
-              Technology. Skills. People. Integrated Infrastructure & Intelligent Solutions.
+            <h1>About VHUTHELU RESOURCES</h1>
+            <p className="hero-subtitle">
+              Integrated Infrastructure. Intelligent Solutions. Sustainable Growth.
             </p>
           </div>
 
-          {/* 1. Company Overview Section */}
+          {/* 1. Company Overview Section Matching Image Text */}
           <div className="company-overview-section">
             <div className="about-content">
-              <span className="ownership-badge">
-                <i className="fas fa-flag"></i> 100% Black-Owned South African Company
-              </span>
-
-              <p className="lead">
-                Vhuthelu Resources (Pty) Ltd is a 100% Black-owned South African company specialising in Information Technology, digital skills development, training and workforce solutions. We provide practical, client-focused technology solutions that help organisations improve operations, productivity and digital capabilities.
+              <p className="lead-heading">
+                <strong>VHUTHELU RESOURCES (PTY) Ltd</strong> is a diversified
+                infrastructure and technology partner delivering integrated
+                solutions across energy, mining support, agriculture, and
+                intelligent IT services.
               </p>
 
               <p className="regular">
-                Established in 2021 and headquartered in Gauteng, we were built on a single principle:{" "}
+                Established in 2021 and headquartered in Gauteng, we were built
+                on a single principle:{" "}
                 <span className="highlight-text">
-                  simplify complex operations through reliable execution, targeted skills development, and forward-thinking innovation.
+                  simplify complex operations through reliable execution and
+                  forward-thinking innovation.
                 </span>
               </p>
-
-              <p className="regular">
-                From delivering enterprise IT support to precision farming systems and workforce empowerment programs, Vhuthelu Resources acts as a strategic partner ensuring performance and measurable growth where it matters most.
-              </p>
             </div>
+          <div className="partner-quote-card">
+           <div className="quote-marks">
+           <i className="fas fa-quote-left"></i>
+           </div>
+           <p className="quote-content">
+             We do not operate as a conventional supplier. We operate as a strategic partner 
+               aligning logistics, technology, and sector expertise to ensure operational continuity, 
+               efficiency, and long-term growth for our clients.
+                </p>
+                    </div>
+       
+            <p className="performance-statement">
+             From fueling large-scale mining operations to deploying precision farming systems and smart IT infrastructure, 
+           <strong> VHUTHELU RESOURCES</strong> delivers performance where it matters most.
+             </p>
 
             {/* Information Details Table Box */}
             <div className="info-details-box">
@@ -137,7 +151,6 @@ export default function About() {
                 </div>
                 <div className="info-row">
                   <span className="info-label">Registration:</span>
-                  {/** */}
                   <span className="info-value">2021/136254/07</span>
                 </div>
                 <div className="info-row">
@@ -154,7 +167,9 @@ export default function About() {
                 </div>
                 <div className="info-row">
                   <span className="info-label">Industry:</span>
-                  <span className="info-value">Information Technology & Workforce Solutions</span>
+                  <span className="info-value">
+                    Information Technology & Workforce Solutions
+                  </span>
                 </div>
               </div>
             </div>
@@ -169,7 +184,9 @@ export default function About() {
                 </div>
                 <h3>Our Vision</h3>
                 <p>
-                  To be a leading provider of integrated ICT and talent development solutions that transform skills, enhance productivity, and prepare the workforce for the future.
+                  To be a leading provider of integrated ICT and talent
+                  development solutions that transform skills, enhance
+                  productivity, and prepare the workforce for the future.
                 </p>
               </div>
 
@@ -179,7 +196,9 @@ export default function About() {
                 </div>
                 <h3>Our Mission</h3>
                 <p>
-                  To empower individuals and organisations through innovative technology, training, strategic talent management and workforce development solutions.
+                  To empower individuals and organisations through innovative
+                  technology, training, strategic talent management and
+                  workforce development solutions.
                 </p>
               </div>
             </div>
@@ -232,18 +251,20 @@ export default function About() {
               <div className="commitment-text">
                 <h3>WHY WORK WITH US</h3>
                 <p className="commitment-lead">
-                  We create operational clarity so our clients can focus on strategic growth.
+                  We create operational clarity so our clients can focus on
+                  strategic growth.
                 </p>
                 <p className="commitment-body">
-                  We remove complexity, streamline processes, and provide infrastructure and digital skills solutions that strengthen businesses at their core.
+                  We remove complexity, streamline processes, and provide
+                  infrastructure and digital skills solutions that strengthen
+                  businesses at their core.
                 </p>
               </div>
             </div>
           </div>
+        </div>
+      </section>
 
-          
-         </div>
-     </section>
       <Footer />
     </>
   );

@@ -70,7 +70,7 @@ const SECTORS = [
 ];
 
 const STATS = [
-  { number: '50+', label: 'Clients Served' },
+  { number: '100+', label: 'Clients Served' },
   { number: '24/7', label: 'Support Available' },
   { number: '4', label: 'Core Sectors' },
   { number: '98%', label: 'Satisfaction Rate' },

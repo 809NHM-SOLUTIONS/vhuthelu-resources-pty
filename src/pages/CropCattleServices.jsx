@@ -39,22 +39,22 @@ export default function Services() {
               </div>
               <h2>Crop and Cattle Farming  Services</h2>
               
-            </div>
+    </div>
   <div className="container">
-    <ul className="highlights-list">
-      <li className="highlight-item">
+        <ul className="highlights-list">
+        <li className="highlight-item">
         <i className="fas fa-check-circle"></i>
         <span>Irrigation Systems</span>
-      </li>
-      <li className="highlight-item">
+        </li>
+        <li className="highlight-item">
         <i className="fas fa-check-circle"></i>
         <span>Harvester Fuel</span>
-      </li>
-      <li className="highlight-item">
+        </li>
+        <li className="highlight-item">
         <i className="fas fa-check-circle"></i>
         <span>Seasonal Planning</span>
-      </li>
-    </ul>
+       </li>
+      </ul>
   </div>
 </section>
         
