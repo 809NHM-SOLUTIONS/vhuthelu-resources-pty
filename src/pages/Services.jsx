@@ -1,10 +1,10 @@
 import Header from '../components/Header.jsx';
 import Footer from '../components/Footer.jsx';
 import ServiceCard from '../components/ServiceCard.jsx';
-
+import { Link } from 'react-router-dom';
 import './Services.css';
 
-const SERVICES = [
+ /*const SERVICES = [
   {
     image: "https://www.tutorialspoint.com/basics_of_computer_science/images/programmer.jpg",
     icon: 'fas fa-cogs',
@@ -37,6 +37,36 @@ const SERVICES = [
     description: 'Offering creative and digital services, including graphic design, web development, and digital platform solutions.',
     features: ['Graphic Design ', 'Digital Platforms ', 'Business Websites ','Web Application Development '],
   },
+];**/
+const SECTORS = [
+  {
+    title: 'Fuel and Energy',
+    description: 'Bulk diesel, petrol & backup power solutions with real-time monitoring.',
+    image: 'https://cdn.britannica.com/93/258993-159-0F2A3A4A/Energy-Sector-composite-image-pumpjack-tanker-truck-fuel-pump.jpg',
+    icon: 'fas fa-gas-pump',
+    link: '/FuelEnergy'
+  },
+  {
+    title: 'Mining Support',
+    description: 'On-site fuel depots, logistics & inventory control for remote mines.',
+    image: 'https://internationalbanker.com/wp-content/uploads/2023/08/Mining.png',
+    icon: 'fas fa-truck-monster',
+    link: '/MiningSupport'
+  },
+  {
+    title: 'Crop and Cattle Farming',
+    description: 'Irrigation power, harvesters fuel & seasonal planning tools. Water pumps, feed mills, transport & livestock support.',
+    image: 'https://africanagribusiness.com/wp-content/uploads/2025/02/irrigation_technology.jpg',
+    icon: 'fas fa-seedling',
+    link: '/CropCattleServices'
+  },
+  {
+    title: 'IT Services',
+    description: 'Web, software, IoT for agriculture , we build what moves you forward.',
+    image: 'https://www.tutorialspoint.com/basics_of_computer_science/images/programmer.jpg',
+    icon: 'fas fa-laptop-code',
+    link: '/ITServices'
+  }
 ];
 
 const STATS = [
@@ -91,15 +121,28 @@ export default function Services() {
               </p>
             </div>
 
-            <div className="services-grid">
-              {SERVICES.map((service, index) => (
-                <ServiceCard 
-                  key={service.title} 
-                  {...service} 
-                  delay={index * 100}
-                />
-              ))}
+           <div className="sectors-grid">
+        {SECTORS.map((sector, index) => (
+          <div className="sector-card" key={index}>
+            <div className="sector-image-container">
+              <img src={sector.image} alt={sector.title} className="sector-image" />
+             <div className="sector-icon-badge">
+          <i className={sector.icon}></i>
+        </div>
+      </div>
+            
+            
+            <div className="sector-card-body">
+              <h3 className="sector-title">{sector.title}</h3>
+              <p className="sector-description">{sector.description}</p>
+              
+              <Link to={sector.link} className="btn-explore">
+                Explore Services <i className="fas fa-arrow-right"></i>
+              </Link>
             </div>
+          </div>
+        ))}
+      </div>
           </div>
         </section>
 
@@ -180,3 +223,5 @@ export default function Services() {
     </>
   );
 }
+
+

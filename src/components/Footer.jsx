@@ -61,12 +61,10 @@ function Footer() {
           <div className="footer-section services-section">
             <h4 className="footer-heading">Our Services</h4>
             <ul className="footer-links">
-              <li><a href="#">Software Development</a></li>
-              <li><a href="#">IT Support</a></li>
-              <li><a href="#">Cloud & Network solutions</a></li>
-              <li><a href="#">Skills Development</a></li>
-              <li><a href="#">Workforce Solutions</a></li>
-              <li><a href="#">Cybersecurity Training</a></li>
+              <li><NavLink to="/services#fuel-energy">Fuel and Energy</NavLink></li>
+              <li><NavLink to="/services#mining-support">Mining Support</NavLink></li>
+              <li><NavLink to="/ITServices">IT Services</NavLink></li>
+              <li><NavLink to="/CropCattleServices">Crop and Cattle Farming</NavLink></li>
             </ul>
           </div>
 

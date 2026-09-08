@@ -6,6 +6,10 @@ import Services from "./pages/Services";
 import Contact from "./pages/Contact";
 import Projects from './pages/Projects';
 import Partnership from './pages/Partnership';
+import ITServices from './pages/ITServices';
+import CropCattleServices from './pages/CropCattleServices'; 
+import MiningSupport from './pages/MiningSupport';
+import FuelEnergy from './pages/FuelEnergy';
 
 function App() {
   return (
@@ -16,8 +20,10 @@ function App() {
       <Route path="/contact" element={<Contact />} />
       <Route path="/projects" element={<Projects />} />
       <Route path="/partnership" element={<Partnership/>} />
-
-
+      <Route path="/ITServices" element={<ITServices />} />
+      <Route path="/CropCattleServices" element={<CropCattleServices />} /> 
+     <Route path="/MiningSupport" element={<MiningSupport />} />
+      <Route path="/FuelEnergy" element={<FuelEnergy />} />
     </Routes>
   );
 }

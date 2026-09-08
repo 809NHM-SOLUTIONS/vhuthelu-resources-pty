@@ -9,11 +9,12 @@ import Hero2 from "../assets/crop.jpg";
 const heroImages = [
   "https://static.wixstatic.com/media/14cc91_17fdf226d70846baa3be5d3bb0b0bb12~mv2.jpg/v1/fill/w_722,h_634,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/ai-generated-IMAGE.jpg",
   "https://wearebluegrass.com/wp-content/uploads/2024/05/importance-of-graphic-design-services-in-digital-marketing-2.png",
-  "https://www.cnp.net/wp-content/uploads/2025/02/AdobeStock_727353391.jpeg",
-  "https://educeptiveconsulting.co.za/wp-content/uploads/2025/11/pexels-photo-5935791.jpeg",
+  "https://beefmaster.co.za/wp-content/uploads/2020/04/Feedlot-min.jpeg",
+  "https://africanagribusiness.com/wp-content/uploads/2025/02/irrigation_technology.jpg",
+  "https://cdn.britannica.com/93/258993-159-0F2A3A4A/Energy-Sector-composite-image-pumpjack-tanker-truck-fuel-pump.jpg",
   "https://www.tutorialspoint.com/basics_of_computer_science/images/programmer.jpg",
-  "https://resources.finalsite.net/images/t_image_size_4/v1593113701/mntechnologycom/mdyhpkjgktchgfqy5om2/WorkbasedLearning.png",
-  "https://www.umweltbundesamt.de/system/files/medien/376/bilder/greenit_j-mel_adobestock_315164682_5260x2864_px.jpeg",
+  
+  "https://smattorneysinc.co.za/wp-content/uploads/2018/09/Construction-Industry-Health-and-Safety-scaled-1.jpg",
 ];
 
 function Home() {
@@ -39,13 +40,12 @@ function Home() {
             <div className="hero-text-inner">
               <span className="hero-tag">INNOVATE • SUSTAIN • IMPACT</span>
               <h1 className="hero-title">
-                Empowering People.<br />
-                <span className="highlight">Enabling Technology.</span><br />
-                Enhancing the Future.
+                Building Solutions.<br />
+                <span className="highlight">Creating value.</span><br />
+                Sustaining Future.
               </h1>
               <p className="hero-description">
-                Vhuthelu Resources is a 100% Black-owened south african technology and workforce solutions company delivering
-                innovative IT ,digital skills development,training and workforce solutions.
+               Vhuthelu Resources (PTY) Ltd provides innovative and sustainable solutions that empower businesses, communities and industries to grow responsibly.
               </p>
               <div className="hero-buttons">
                 <a href="/services" className="btn btn-primary">
@@ -191,29 +191,29 @@ function Home() {
               </div>
               <div className="gallery-item">
                 <img 
-                  src= "https://cdn.prod.website-files.com/62752da756f73572fb31bbd1/66cca2996764d79b16d13f1a_What%20Digital%20Skill%20Development%20Means.webp" 
-                  alt=" Digital Skills & Training"
+                  src= "https://internationalbanker.com/wp-content/uploads/2023/08/Mining.png" 
+                  alt=" Mining Operations "
                 />
                 <div className="gallery-overlay">
-                  <span>Digital Skills & Training</span>
+                  <span>Mining Operations</span>
                 </div>
               </div>
               <div className="gallery-item">
                 <img 
-                  src= "https://resources.finalsite.net/images/t_image_size_4/v1593113701/mntechnologycom/mdyhpkjgktchgfqy5om2/WorkbasedLearning.png"
-                  alt=" Workforce Solutions "
+                  src= "https://www.dhl.com/discover/content/dam/global-master/4-logistics-advice/import-and-export-advice/wec0759-what-is-logistics/Mobile_Image_991x558.jpg"
+                  alt=" Logistics  "
                 />
                 <div className="gallery-overlay">
-                  <span>Workforce Solutions</span>
+                  <span>Logistics</span>
                 </div>
               </div>
               <div className="gallery-item">
                 <img 
-                  src="https://wearebluegrass.com/wp-content/uploads/2024/05/importance-of-graphic-design-services-in-digital-marketing-2.png"
-                  alt="Creative & Digital Services "
+                  src="https://constructionnews.co.za/wp-content/uploads/2024/02/The-ultimate-list-of-leading-construction-companies-in-South-Africa.jpg"
+                  alt="Construction"
                 />
                 <div className="gallery-overlay">
-                  <span>Creative & Digital Services</span>
+                  <span>Construction</span>
                 </div>
               </div>
             </div>
