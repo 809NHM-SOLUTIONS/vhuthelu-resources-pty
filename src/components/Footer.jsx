@@ -74,8 +74,13 @@ function Footer() {
             <ul className="footer-contact">
               <li>
                 <i className="fas fa-map-marker-alt"></i>
-                <span>111 Outeniqua Flats 721 Church Street Arcadia<br></br> Gauteng  0083</span>
-                <span>23 Corridor cres  Ben Fleur <br></br>EMalahleni 1035  Mpumalanga </span>
+                <span>111 Outeniqua Flats 721<br></br> Church Street Arcadia<br></br> Gauteng  0083</span>
+                
+              </li>
+              <li>
+                
+                <i className="fas fa-map-marker-alt"></i>
+                <span >23 Corridor cres <br></br> Ben Fleur EMalahleni <br></br>  Mpumalanga 1035 </span>
               </li>
               <li>
                 <i className="fas fa-phone"></i>

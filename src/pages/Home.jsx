@@ -9,11 +9,11 @@ import Hero2 from "../assets/crop.jpg";
 const heroImages = [
   "https://static.wixstatic.com/media/14cc91_17fdf226d70846baa3be5d3bb0b0bb12~mv2.jpg/v1/fill/w_722,h_634,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/ai-generated-IMAGE.jpg",
   "https://wearebluegrass.com/wp-content/uploads/2024/05/importance-of-graphic-design-services-in-digital-marketing-2.png",
-  "https://beefmaster.co.za/wp-content/uploads/2020/04/Feedlot-min.jpeg",
+  "https://www.worldanimalprotection.org/cdn-cgi/image/width=800,format=auto,fit=cover/siteassets/images/article/shutterstock_1669554079_2.jpg",
   "https://africanagribusiness.com/wp-content/uploads/2025/02/irrigation_technology.jpg",
   "https://cdn.britannica.com/93/258993-159-0F2A3A4A/Energy-Sector-composite-image-pumpjack-tanker-truck-fuel-pump.jpg",
   "https://www.tutorialspoint.com/basics_of_computer_science/images/programmer.jpg",
-  
+  "https://internationalbanker.com/wp-content/uploads/2023/08/Mining.png",
   "https://smattorneysinc.co.za/wp-content/uploads/2018/09/Construction-Industry-Health-and-Safety-scaled-1.jpg",
 ];
 
@@ -106,7 +106,7 @@ function Home() {
               <p className="section-subtitle">Technology. Skills. People.</p>
             </div>
             <p className="section-description">
-              Vhuthelu Resources (Pty) Ltd is a 100% Black-owned South African company specialising in Information Technology, digital skills development, training and workforce solutions. We provide practical, client-focused technology solutions that help organisations improve operations, productivity and digital capabilities.
+              Vhuthelu Resources (Pty) Ltd is a 100% Black-owned South African multi-sector enterprise dedicated to driving sustainable operational growth through practical, industry-focused solutions. Combining expertise in Information Technology, digital skills development, and workforce solutions with strong capabilities in crop and cattle farming, bulk fuel and energy supply, and specialized mining support, we empower organizations to enhance productivity, optimize operations, and build long-term digital and industrial capability.
             </p>
             <div className="text-center">
               <a href="/about" className="btn btn-secondary">

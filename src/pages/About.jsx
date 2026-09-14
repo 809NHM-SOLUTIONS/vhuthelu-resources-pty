@@ -130,14 +130,14 @@ export default function About() {
            <i className="fas fa-quote-left"></i>
            </div>
            <p className="quote-content">
-             We do not operate as a conventional supplier. We operate as a strategic partner 
-               aligning logistics, technology, and sector expertise to ensure operational continuity, 
+             We do not operate as a conventional supplier. We operate as a strategic partner <br></br>
+               aligning logistics, technology, and sector expertise to ensure operational continuity, <br></br>
                efficiency, and long-term growth for our clients.
                 </p>
                     </div>
        
             <p className="performance-statement">
-             From fueling large-scale mining operations to deploying precision farming systems and smart IT infrastructure, 
+             From fueling large-scale mining operations to deploying precision farming systems and smart IT <br></br> infrastructure, 
            <strong> VHUTHELU RESOURCES</strong> delivers performance where it matters most.
              </p>
 
@@ -168,7 +168,7 @@ export default function About() {
                 <div className="info-row">
                   <span className="info-label">Industry:</span>
                   <span className="info-value">
-                    Information Technology & Workforce Solutions
+                    Information Technology, Agriculture, Fuel & Energy, and Mining Support Solutions
                   </span>
                 </div>
               </div>
@@ -184,9 +184,7 @@ export default function About() {
                 </div>
                 <h3>Our Vision</h3>
                 <p>
-                  To be a leading provider of integrated ICT and talent
-                  development solutions that transform skills, enhance
-                  productivity, and prepare the workforce for the future.
+                 To be a leading multi-sector provider of integrated technology, agricultural, energy, and mining solutions that transforms skills, enhances productivity, and drives sustainable growth across crop production, fuel supply, and resource development for the future.
                 </p>
               </div>
 
@@ -196,9 +194,7 @@ export default function About() {
                 </div>
                 <h3>Our Mission</h3>
                 <p>
-                  To empower individuals and organisations through innovative
-                  technology, training, strategic talent management and
-                  workforce development solutions.
+                  To empower individuals and organisations across the technology, agricultural, energy, and mining sectors through innovative solutions, strategic training, sustainable operational management, and targeted workforce development.
                 </p>
               </div>
             </div>

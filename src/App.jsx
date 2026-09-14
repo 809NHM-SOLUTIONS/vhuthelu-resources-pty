@@ -10,6 +10,7 @@ import ITServices from './pages/ITServices';
 import CropCattleServices from './pages/CropCattleServices'; 
 import MiningSupport from './pages/MiningSupport';
 import FuelEnergy from './pages/FuelEnergy';
+import ITProjects from "./pages/ITProjects";
 
 function App() {
   return (
@@ -24,6 +25,8 @@ function App() {
       <Route path="/CropCattleServices" element={<CropCattleServices />} /> 
      <Route path="/MiningSupport" element={<MiningSupport />} />
       <Route path="/FuelEnergy" element={<FuelEnergy />} />
+      <Route path="/ITProjects" element={<ITProjects />} />
+
     </Routes>
   );
 }

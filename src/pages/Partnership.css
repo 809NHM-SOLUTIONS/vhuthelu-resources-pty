@@ -10,8 +10,8 @@
 
 .partnerships-header {
   text-align: center;
-  max-width: 720px;
-  margin: 0 auto 60px;
+  margin-bottom: 60px;
+   background: radial-gradient(circle, rgba(7, 180, 90, 0.08) 0%, transparent 100%);
 }
 
 .section-badge {
@@ -41,14 +41,17 @@
 
 /* Block Containers */
 .impact-block {
+    
   margin-bottom: 52px;
 }
 
 .block-title {
   display: flex;
+  flex-direction: column; /* Stacks icon above heading; remove if side-by-side is preferred */
   align-items: center;
-  gap: 12px;
-  margin-bottom: 24px;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
 .block-title i {

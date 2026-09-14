@@ -8,7 +8,8 @@ const COLLABORATION_AREAS = [
   { title: "Public Institutions", icon: "fas fa-university" },
   { title: "Private Institutions", icon: "fas fa-briefcase" },
   { title: "Sector Education & Training Authorities (SETAs)", icon: "fas fa-graduation-cap" },
-  { title: "Government Development Programmes", icon: "fas fa-landmark" }
+  { title: "Government Development Programmes", icon: "fas fa-landmark" },
+  { title: "Communication & Telecommunications", icon: "fas fa-comments" }
 ];
 
 const CONTRIBUTIONS = [
@@ -19,7 +20,27 @@ const CONTRIBUTIONS = [
   { title: "Youth Employability", icon: "fas fa-user-graduate" },
   { title: "ICT-Focused Internships", icon: "fas fa-id-badge" },
   { title: "Workplace Opportunities", icon: "fas fa-chart-line" },
-  { title: "B-BBEE & National Development", icon: "fas fa-award" }
+  { title: "B-BBEE & National Development", icon: "fas fa-award" },
+  { 
+    title: "Heavy machinery support", 
+    icon: "fas fa-hard-hat",
+    
+  },
+  { 
+    title: "Irrigation powering", 
+    icon: "fas fa-water",
+    
+  },
+  { 
+    title: "Bulk diesel & petrol delivery", 
+    icon: "fas fa-gas-pump",
+    
+  },
+{
+   title:"feed mills & livestock transport logistics",
+icon: "fas fa-cow",
+}
+
 ];
 
 export default function Partnerships() {
