@@ -2,7 +2,7 @@ import Header from '../components/Header.jsx';
 import Footer from '../components/Footer.jsx';
 import ServiceCard from '../components/ServiceCard.jsx';
 
-import './Services.css';
+import './MiningSupport.css';
 
 const MINING_SUPPORT_SERVICES = [
   {

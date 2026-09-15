@@ -47,7 +47,7 @@
 
 .block-title {
   display: flex;
-  flex-direction: column; /* Stacks icon above heading; remove if side-by-side is preferred */
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
