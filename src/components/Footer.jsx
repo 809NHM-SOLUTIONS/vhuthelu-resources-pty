@@ -88,7 +88,7 @@ function Footer() {
               </li>
               <li>
                 <i className="fas fa-envelope"></i>
-                <span>vhutheluresources@gmail.com</span>
+                <span>info@vhutheluresources.co.za</span>
               </li>
               <li>
                 <i className="fas fa-clock"></i>
