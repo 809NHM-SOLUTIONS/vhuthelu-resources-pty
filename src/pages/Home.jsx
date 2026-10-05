@@ -207,15 +207,7 @@ function Home() {
                   <span>Logistics</span>
                 </div>
               </div>
-              <div className="gallery-item">
-                <img 
-                  src="https://constructionnews.co.za/wp-content/uploads/2024/02/The-ultimate-list-of-leading-construction-companies-in-South-Africa.jpg"
-                  alt="Construction"
-                />
-                <div className="gallery-overlay">
-                  <span>Construction</span>
-                </div>
-              </div>
+          
             </div>
           </div>
         </section>
