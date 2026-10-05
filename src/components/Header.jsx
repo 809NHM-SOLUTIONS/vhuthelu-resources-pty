@@ -25,8 +25,8 @@ function Header() {
             className="header-logo" 
           />
           <div className="brand-text">
-            <span className="brand-name">VHUTHELU</span>
-            <span className="brand-subtitle">RESOURCES (PTY) Ltd</span>
+            <span className="brand-name"></span>
+            <span className="brand-subtitle"></span>
           </div>
         </NavLink>
 
