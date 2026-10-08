@@ -1,10 +1,8 @@
 import { useEffect, useState } from "react";
+
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import "./Home.css";
-import Hero1 from "../assets/cattle.jpg";
-import Hero2 from "../assets/crop.jpg";
-
 
 const heroImages = [
   "https://static.wixstatic.com/media/14cc91_17fdf226d70846baa3be5d3bb0b0bb12~mv2.jpg/v1/fill/w_722,h_634,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/ai-generated-IMAGE.jpg",
@@ -23,9 +21,11 @@ function Home() {
 
   useEffect(() => {
     if (paused) return;
+
     const interval = setInterval(() => {
       setActiveSlide((prev) => (prev + 1) % heroImages.length);
     }, 4000);
+
     return () => clearInterval(interval);
   }, [paused]);
 
@@ -34,31 +34,50 @@ function Home() {
       <Header />
 
       <main className="home-main">
-        {/* Hero Section - split layout */}
+
+        {/* =========================
+            HERO SECTION
+        ========================== */}
         <section className="hero-section">
+
           <div className="hero-text-panel">
             <div className="hero-text-inner">
-              <span className="hero-tag">INNOVATE • SUSTAIN • IMPACT</span>
+
+              <span className="hero-tag">
+                INNOVATE • SUSTAIN • IMPACT
+              </span>
+
               <h1 className="hero-title">
-                Building Solutions.<br />
-                <span className="highlight">Creating value.</span><br />
+                Building Solutions.
+                <br />
+                <span className="highlight">Creating value.</span>
+                <br />
                 Sustaining Future.
               </h1>
+
               <p className="hero-description">
-               Vhuthelu Resources (PTY) Ltd provides innovative and sustainable solutions that empower businesses, communities and industries to grow responsibly.
+                Vhuthelu Resources (PTY) Ltd provides innovative and
+                sustainable solutions that empower businesses, communities
+                and industries to grow responsibly.
               </p>
+
               <div className="hero-buttons">
+
                 <a href="/services" className="btn btn-primary">
                   Explore Our Services →
                 </a>
+
                 <a href="/contact" className="btn btn-primary">
-                    Contact Us →
+                  Contact Us →
                 </a>
-                <br />
+
                 <a href="/about" className="btn btn-outline">
-                  <i className="fas fa-play-circle"></i> Watch Our Story
+                  <i className="fas fa-play-circle"></i>
+                  Watch Our Story
                 </a>
+
               </div>
+
             </div>
           </div>
 
@@ -67,22 +86,29 @@ function Home() {
             onMouseEnter={() => setPaused(true)}
             onMouseLeave={() => setPaused(false)}
           >
+
             <div
               className="hero-image-track"
               style={{
                 width: `${heroImages.length * 100}%`,
-                transform: `translateX(-${(activeSlide / heroImages.length) * 100}%)`,
+                transform: `translateX(-${
+                  (activeSlide / heroImages.length) * 100
+                }%)`,
               }}
             >
+
               {heroImages.map((src, i) => (
                 <img
                   key={src}
                   src={src}
                   alt={`Vhuthelu Resources ${i + 1}`}
                   className="hero-image"
-                  style={{ width: `${100 / heroImages.length}%` }}
+                  style={{
+                    width: `${100 / heroImages.length}%`,
+                  }}
                 />
               ))}
+
             </div>
 
             <div className="hero-image-dots">
@@ -90,153 +116,246 @@ function Home() {
                 <button
                   key={i}
                   type="button"
-                  className={`hero-dot ${i === activeSlide ? "active" : ""}`}
+                  className={`hero-dot ${
+                    i === activeSlide ? "active" : ""
+                  }`}
                   onClick={() => setActiveSlide(i)}
                   aria-label={`Show slide ${i + 1}`}
                 />
               ))}
             </div>
+
           </div>
+
         </section>
-        {/* About Preview Section */}
+
+        {/* =========================
+            ABOUT US
+        ========================== */}
         <section className="about-preview-section">
-          <div className="container text-center">
+
+          <div className="container">
+
             <div className="section-header">
               <h2>ABOUT US</h2>
-              <p className="section-subtitle">Technology. Skills. People.</p>
+              <p className="section-subtitle">
+                Technology. Skills. People.
+              </p>
             </div>
+
             <p className="section-description">
-              Vhuthelu Resources (Pty) Ltd is a 100% Black-owned South African multi-sector enterprise dedicated to driving sustainable operational growth through practical, industry-focused solutions. Combining expertise in Information Technology, digital skills development, and workforce solutions with strong capabilities in crop and cattle farming, bulk fuel and energy supply, and specialized mining support, we empower organizations to enhance productivity, optimize operations, and build long-term digital and industrial capability.
+              Vhuthelu Resources (Pty) Ltd is a 100% Black-owned South
+              African multi-sector enterprise dedicated to driving
+              sustainable operational growth through practical,
+              industry-focused solutions. Combining expertise in Information
+              Technology, digital skills development, and workforce solutions
+              with strong capabilities in crop and cattle farming, bulk fuel
+              and energy supply, and specialized mining support, we empower
+              organizations to enhance productivity, optimize operations,
+              and build long-term digital and industrial capability.
             </p>
+
             <div className="text-center">
               <a href="/about" className="btn btn-secondary">
                 Learn More →
               </a>
             </div>
+
           </div>
+
         </section>
 
-        {/* Why Choose Us Section with Icons */}
+        {/* =========================
+            WHY CHOOSE US
+        ========================== */}
         <section className="why-choose-section">
+
           <div className="container">
+
             <div className="section-header">
               <h2>WHY CHOOSE VHUTHELU RESOURCES</h2>
+
               <p className="section-subtitle">
-                Innovative Solutions. Skilled Professionals. Sustainable Practices.
+                Innovative Solutions. Skilled Professionals.
+                Sustainable Practices.
               </p>
             </div>
-          
-            
 
             <div className="features-grid">
+
               <div className="feature-card">
                 <div className="feature-icon">
                   <i className="fas fa-bullseye"></i>
                 </div>
+
                 <h3>Client Focus</h3>
-                <p>Practical and relevant solutions designed around each client's environment and requirements.</p>
+
+                <p>
+                  Practical and relevant solutions designed around each
+                  client's environment and requirements.
+                </p>
               </div>
 
               <div className="feature-card">
                 <div className="feature-icon">
                   <i className="fas fa-lightbulb"></i>
                 </div>
+
                 <h3>Innovation</h3>
-                <p>We use technology and modern approaches to develop progressive solutions.</p>
+
+                <p>
+                  We use technology and modern approaches to develop
+                  progressive solutions.
+                </p>
               </div>
 
               <div className="feature-card">
                 <div className="feature-icon">
                   <i className="fas fa-user-graduate"></i>
                 </div>
+
                 <h3>Empowerment</h3>
-                <p>We support skills development, digital inclusion and opportunities for individuals and organisations.</p>
+
+                <p>
+                  We support skills development, digital inclusion and
+                  opportunities for individuals and organisations.
+                </p>
               </div>
 
               <div className="feature-card">
                 <div className="feature-icon">
                   <i className="fas fa-shield-alt"></i>
                 </div>
+
                 <h3>Professionalism</h3>
-                <p>We operate with integrity, accountability and a commitment to quality.</p>
+
+                <p>
+                  We operate with integrity, accountability and a
+                  commitment to quality.
+                </p>
               </div>
 
               <div className="feature-card">
                 <div className="feature-icon">
                   <i className="fas fa-chart-line"></i>
                 </div>
+
                 <h3>Scalable Solutions</h3>
-                <p>Our solutions are designed to grow with the changing needs of our clients.</p>
+
+                <p>
+                  Our solutions are designed to grow with the changing
+                  needs of our clients.
+                </p>
               </div>
+
             </div>
+
           </div>
+
         </section>
 
-        {/* Gallery/Portfolio Section */}
-       <section className="gallery-section">
+        {/* =========================
+            OUR WORK
+        ========================== */}
+        <section className="gallery-section">
+
           <div className="container">
+
             <div className="section-header">
               <h2>Our Work in Action</h2>
-              <p className="section-subtitle">Delivering excellence across industries</p>
+
+              <p className="section-subtitle">
+                Delivering excellence across industries
+              </p>
             </div>
+
             <div className="gallery-grid">
+
               <div className="gallery-item">
-                <img 
+                <img
                   src="https://www.tutorialspoint.com/basics_of_computer_science/images/programmer.jpg"
-                  alt=" Information Technology Solutions"
+                  alt="Information Technology Solutions"
+                  loading="lazy"
                 />
+
                 <div className="gallery-overlay">
                   <span>Information Technology Solutions</span>
                 </div>
               </div>
+
               <div className="gallery-item">
-                <img 
-                  src= "https://internationalbanker.com/wp-content/uploads/2023/08/Mining.png" 
-                  alt=" Mining Operations "
+                <img
+                  src="https://internationalbanker.com/wp-content/uploads/2023/08/Mining.png"
+                  alt="Mining Operations"
+                  loading="lazy"
                 />
+
                 <div className="gallery-overlay">
                   <span>Mining Operations</span>
                 </div>
               </div>
+
               <div className="gallery-item">
-                <img 
-                  src= "https://www.dhl.com/discover/content/dam/global-master/4-logistics-advice/import-and-export-advice/wec0759-what-is-logistics/Mobile_Image_991x558.jpg"
-                  alt=" Logistics  "
+                <img
+                  src="https://www.dhl.com/discover/content/dam/global-master/4-logistics-advice/import-and-export-advice/wec0759-what-is-logistics/Mobile_Image_991x558.jpg"
+                  alt="Logistics"
+                  loading="lazy"
                 />
+
                 <div className="gallery-overlay">
                   <span>Logistics</span>
                 </div>
               </div>
-          
+
             </div>
+
           </div>
+
         </section>
 
-      
-
-        {/* Stats Section */}
+        {/* =========================
+            STATS
+        ========================== */}
         <section className="stats-section">
+
           <div className="container">
+
             <div className="stats-grid">
+
               <div className="stat-item">
                 <span className="stat-number">50+</span>
-                <span className="stat-label">Happy Clients Across Industries</span>
+                <span className="stat-label">
+                  Happy Clients Across Industries
+                </span>
               </div>
+
               <div className="stat-item">
                 <span className="stat-number">120+</span>
-                <span className="stat-label">Projects Completed Successfully</span>
+                <span className="stat-label">
+                  Projects Completed Successfully
+                </span>
               </div>
+
               <div className="stat-item">
                 <span className="stat-number">30+</span>
-                <span className="stat-label">Skilled Professionals On Our Team</span>
+                <span className="stat-label">
+                  Skilled Professionals On Our Team
+                </span>
               </div>
+
               <div className="stat-item">
                 <span className="stat-number">100%</span>
-                <span className="stat-label">Commitment to Quality and Excellence</span>
+                <span className="stat-label">
+                  Commitment to Quality and Excellence
+                </span>
               </div>
+
             </div>
+
           </div>
+
         </section>
+
       </main>
 
       <Footer />
