@@ -39,9 +39,16 @@ import './Services.css';
   },
 ];**/
 const SECTORS = [
+   {
+    title: 'Information Technology',
+    description: 'Web, software, IoT for agriculture , we build what moves you forward.',
+    image: 'https://www.tutorialspoint.com/basics_of_computer_science/images/programmer.jpg',
+    icon: 'fas fa-laptop-code',
+    link: '/ITServices'
+  },
   {
     title: 'Fuel and Energy',
-    description: 'Bulk diesel, petrol & backup power solutions with real-time monitoring.',
+    description: 'Bulk diesel, petrol & backup power solutions .',
     image: 'https://cdn.britannica.com/93/258993-159-0F2A3A4A/Energy-Sector-composite-image-pumpjack-tanker-truck-fuel-pump.jpg',
     icon: 'fas fa-gas-pump',
     link: '/FuelEnergy'
@@ -54,20 +61,23 @@ const SECTORS = [
     link: '/MiningSupport'
   },
   {
-    title: 'Crop and Cattle Farming',
+    title: 'Logistics',
+    description: 'Efficient transportation and supply chain management solutions.',
+    image: 'https://www.dhl.com/discover/content/dam/global-master/4-logistics-advice/import-and-export-advice/wec0759-what-is-logistics/Mobile_Image_991x558.jpg',
+    icon: 'fas fa-truck',
+    link: '/Logistics'
+  },
+  {
+    title: 'Agriculture',
     description: 'Irrigation power, harvesters fuel & seasonal planning tools. Water pumps, feed mills, transport & livestock support.',
     image: 'https://africanagribusiness.com/wp-content/uploads/2025/02/irrigation_technology.jpg',
     icon: 'fas fa-seedling',
     link: '/CropCattleServices'
   },
-  {
-    title: 'IT Services',
-    description: 'Web, software, IoT for agriculture , we build what moves you forward.',
-    image: 'https://www.tutorialspoint.com/basics_of_computer_science/images/programmer.jpg',
-    icon: 'fas fa-laptop-code',
-    link: '/ITServices'
-  }
+ 
 ];
+
+
 
 const STATS = [
   { number: '100+', label: 'Clients Served' },

@@ -110,10 +110,8 @@ export default function About() {
           <div className="company-overview-section">
             <div className="about-content">
               <p className="lead-heading">
-                <strong>VHUTHELU RESOURCES (PTY) Ltd</strong> is a diversified
-                infrastructure and technology partner delivering integrated
-                solutions across energy, mining support, agriculture, and
-                intelligent IT services.
+                <strong>VHUTHELU RESOURCES (PTY) Ltd</strong> is a diversified technology and infrastructure partner delivering integrated solutions across 
+                Information Technology, Fuel and Energy, Mining Operations, Logistics, and Agriculture.
               </p>
 
               <p className="regular">
@@ -164,11 +162,12 @@ export default function About() {
                 <div className="info-row">
                   <span className="info-label">Location:</span>
                   <span className="info-value">Pretoria, Gauteng</span>
+                  <span className="info-value">Emalahleni, Mpumalanga</span>
                 </div>
                 <div className="info-row">
                   <span className="info-label">Industry:</span>
                   <span className="info-value">
-                    Information Technology, Agriculture, Fuel & Energy, and Mining Support Solutions
+                    Information Technology, Fuel & Energy, Mining operations, Logistics, Agriculture
                   </span>
                 </div>
               </div>
@@ -184,7 +183,7 @@ export default function About() {
                 </div>
                 <h3>Our Vision</h3>
                 <p>
-                 To be a leading multi-sector provider of integrated technology, agricultural, energy, and mining solutions that transforms skills, enhances productivity, and drives sustainable growth across crop production, fuel supply, and resource development for the future.
+                 To be a leading multi-sector provider of integrated Information Technology, Fuel & Energy, Mining operations, Logistics, and Agriculture solutions that transforms skills, enhances productivity, and drives sustainable growth across crop production, fuel supply, and resource development for the future.
                 </p>
               </div>
 
@@ -194,7 +193,7 @@ export default function About() {
                 </div>
                 <h3>Our Mission</h3>
                 <p>
-                  To empower individuals and organisations across the technology, agricultural, energy, and mining sectors through innovative solutions, strategic training, sustainable operational management, and targeted workforce development.
+                 To empower individuals and organisations across the Information Technology,Fuel & Energy,Mining operations,Logistics, and Agriculture sectors through innovative solutions, strategic training, sustainable operational management, and targeted workforce development.
                 </p>
               </div>
             </div>

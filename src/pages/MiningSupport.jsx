@@ -5,17 +5,7 @@ import ServiceCard from '../components/ServiceCard.jsx';
 import './MiningSupport.css';
 
 const MINING_SUPPORT_SERVICES = [
-  {
-    image: "https://www.nedapidentification.com/wp-content/uploads/2023/01/Haulpack-with-Tank-scaled.jpg",
-    icon: 'fas fa-warehouse',
-    title: 'On-Site Fuel Depots & Infrastructure',
-    description: 'Rapid deployment of self-bunded storage, heavy-duty filtration, and full safety compliance for fuel infrastructure at the pit face.',
-    features: [
-      'Containerized & Mobile Depot Setup',
-      'Fuel Quality & Filtration Systems',
-      'Safety & Regulatory Compliance',
-    ],
-  },
+  
   {
     image: "https://www.azomining.com/images/Article_Images/ImageForArticle_1856_17442759620541009.jpg",
     icon: 'fas fa-truck-moving',
@@ -27,17 +17,7 @@ const MINING_SUPPORT_SERVICES = [
       'Site Distribution Management',
     ],
   },
-  {
-    image: "https://mecaluxcom.cdnwm.com/documents/d/global/m42p01-inventario-tiempo-real-terminales-radiofrecuencia?e=jpg&imwidth=1024&imdensity=1",
-    icon: 'fas fa-clipboard-list',
-    title: 'Real-Time Inventory & Material Control',
-    description: 'Tag-and-pump dispensing, vendor-managed tank replenishment, and daily reconciliation to keep every liter of fuel accounted for.',
-    features: [
-      'Automated Dispensing & Telematics',
-      'Vendor-Managed Inventory (VMI)',
-      'Loss & Reconciliation Tracking',
-    ],
-  },
+ 
 ];
 
 export default function Services() {

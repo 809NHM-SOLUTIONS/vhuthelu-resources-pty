@@ -9,6 +9,8 @@ import tnetraImg from '../assets/TNETRA.png';
 import teamoImg from '../assets/TEAMO.png';
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import ourhrpulse from '../assets/OurHR.jpeg'; 
+import sitevisit from '../assets/SiteVisit.jpeg';
 
 const PLATFORMS_DATA = [
  
@@ -128,8 +130,8 @@ const ITProjects = () => {
                 </div>
                 <div className="application-card">
 
-                     <div className="application-card-image">
-                     <img alt="OurHR-Pulse™" />
+                    <div className="application-card-image">
+                     <img src={ourhrpulse} alt="OurHR-Pulse™" />
                      </div> 
 
                   <div className="project-card-header">
@@ -154,8 +156,8 @@ const ITProjects = () => {
                 </div>
                   <div className="application-card">
 
-                     <div className="application-card-image">
-                     <img alt="SiteVisit™" />
+                    <div className="application-card-image">
+                     <img src={sitevisit} alt="SiteVisit™" />
                      </div> 
 
                   <div className="project-card-header">
@@ -246,33 +248,8 @@ const ITProjects = () => {
                   </div>
                 </div>
 
-                {/* Project Card 3 */}
-                <div className="project-card">
-
-                     <div className="project-card-image">
-                     <img src={teamoImg} alt="Teamo Consulting" />
-                     </div>
-
-                  <div className="project-card-header">
-                    <h4 className="project-title">Teamo Consulting</h4>
-                    <span className="project-badge">Website</span>
-                  </div>
-                  <div className="project-card-body">
-                    <p>
-                      Skills and workforce development solutions including training, workplace-based learning, and talent development.
-                    </p>
-                  </div>
-                  <div className="project-card-footer">
-                    <a 
-                      href="https://teamoconsulting.co.za" 
-                      target="_blank" 
-                      rel="noopener noreferrer" 
-                      className="project-btn"
-                    >
-                      Visit Website <i className="fas fa-arrow-right"></i>
-                    </a>
-                  </div>
-                </div>
+               
+                
 
                 {/* Project Card 4 */}
                 <div className="project-card">

@@ -106,7 +106,7 @@ function Home() {
               <p className="section-subtitle">Technology. Skills. People.</p>
             </div>
             <p className="section-description">
-              Vhuthelu Resources (Pty) Ltd is a 100% Black-owned South African multi-sector enterprise dedicated to driving sustainable operational growth through practical, industry-focused solutions. Combining expertise in Information Technology, digital skills development, and workforce solutions with strong capabilities in crop and cattle farming, bulk fuel and energy supply, and specialized mining support, we empower organizations to enhance productivity, optimize operations, and build long-term digital and industrial capability.
+              Vhuthelu Resources (Pty) Ltd is a 100% Black-owned South African multi-sector enterprise dedicated to driving sustainable operational growth through practical, industry-focused solutions. Combining expertise in Information Technology with strong capabilities in bulk fuel and energy supply, specialized mining support, logistics, and crop and cattle farming, we empower organizations to enhance productivity, optimize operations, and build long-term digital and industrial capability.
             </p>
             <div className="text-center">
               <a href="/about" className="btn btn-secondary">
@@ -189,6 +189,15 @@ function Home() {
                   <span>Information Technology Solutions</span>
                 </div>
               </div>
+               <div className="gallery-item">
+                <img 
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0o9ipHJs0iZQ0BVZof0yFNTrSk21i36UHCj5X2IksfBE5MvSlwIhaQeo&s=10"
+                  alt=" Information Technology Solutions"
+                />
+                <div className="gallery-overlay">
+                  <span>Fuel and energy</span>
+                </div>
+              </div>
               <div className="gallery-item">
                 <img 
                   src= "https://internationalbanker.com/wp-content/uploads/2023/08/Mining.png" 
@@ -209,11 +218,11 @@ function Home() {
               </div>
               <div className="gallery-item">
                 <img 
-                  src="https://constructionnews.co.za/wp-content/uploads/2024/02/The-ultimate-list-of-leading-construction-companies-in-South-Africa.jpg"
-                  alt="Construction"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyAre3x7wjUWGsc9FYr7KMJcndqV-mTrGiJ4c5kDYxp0j1VaJwv_Z1vlIj&s=10"
+                  alt="Agriculture"
                 />
                 <div className="gallery-overlay">
-                  <span>Construction</span>
+                  <span>Agriculture</span>
                 </div>
               </div>
             </div>

@@ -196,7 +196,7 @@
   max-height: 100%;
   width: auto;
   height: auto;
-  object-fit: contain; /* Prevents cropping and keeps the full image visible */
+  object-fit: contain; 
   display: block;
 }
 /* Header Alignment */

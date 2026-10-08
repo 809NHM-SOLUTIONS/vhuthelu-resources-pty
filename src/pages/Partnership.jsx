@@ -14,32 +14,21 @@ const COLLABORATION_AREAS = [
 
 const CONTRIBUTIONS = [
   { title: "Digital Skills Development", icon: "fas fa-laptop-code" },
-  { title: "Digital Inclusion", icon: "fas fa-network-wired" },
   { title: "Access to Tech Opportunities", icon: "fas fa-door-open" },
   { title: "Workforce Development", icon: "fas fa-user-gear" },
   { title: "Youth Employability", icon: "fas fa-user-graduate" },
   { title: "ICT-Focused Internships", icon: "fas fa-id-badge" },
   { title: "Workplace Opportunities", icon: "fas fa-chart-line" },
   { title: "B-BBEE & National Development", icon: "fas fa-award" },
-  { 
-    title: "Heavy machinery support", 
-    icon: "fas fa-hard-hat",
-    
-  },
-  { 
-    title: "Irrigation powering", 
-    icon: "fas fa-water",
-    
-  },
-  { 
+{ 
     title: "Bulk diesel & petrol delivery", 
     icon: "fas fa-gas-pump",
     
   },
-{
-   title:"feed mills & livestock transport logistics",
-icon: "fas fa-cow",
-}
+  { 
+    title: "Logistics", 
+    icon: "fas fa-truck",},
+
 
 ];
 
