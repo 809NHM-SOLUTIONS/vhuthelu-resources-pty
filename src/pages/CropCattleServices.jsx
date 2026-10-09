@@ -5,16 +5,7 @@ import ServiceCard from '../components/ServiceCard.jsx';
 import './CropCattleServices.css';
 
 const CROP_SERVICES = [
-  {
-    image: "https://www.danfoss.com/media/6541/irrigation_new.jpg",
-    icon: 'fas fa-water',
-    title: 'Irrigation Powering & Management',
-    description: 'High-performance power solutions for pivot, drip, and overhead irrigation systems, keeping fields watered on schedule.',
-    features: [
-      'Generators & Solar Hybrids: Reliable primary and backup power.',
-      'Water System Support: Grid connections for pivot, drip, and overhead systems.',
-    ],
-  },
+ 
   {
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSA7oNwyB5HvnZe0qQHfTAoEfwoVh5tIls0BX1ii2l4rKaK-UPgN-J0HHQ&s=10",
     icon: 'fas fa-gas-pump',
