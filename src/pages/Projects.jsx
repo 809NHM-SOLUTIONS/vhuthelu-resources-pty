@@ -5,6 +5,13 @@ import './Services.css';
 
 
 const PROJECTS = [
+   {
+    title: 'Information Technology ',
+    description: 'Custom business websites and web applications built to manage operations and customer-facing services.',
+    image: 'https://www.uws.ac.uk/media/6539/project-management.jpg?width=650&height=650&v=1dada066cf9f370',
+    icon: 'fas fa-laptop-code',
+    link: '/ITProjects',
+  },
   {
     title: 'Fuel and Energy',
     description: '',
@@ -13,26 +20,27 @@ const PROJECTS = [
     link: '/projects/fuel-depot-rollout',
   },
   {
-    title: 'Mining ',
+    title: 'Mining Operations' ,
     description: '',
     image: 'https://www.miningdoc.tech/wp-content/uploads/2025/09/Mining-trucks.jpeg',
      icon: 'fas fa-truck-monster',
     link: '',
   },
+   {
+    title: 'Logistics', 
+    description: '',
+    image: 'https://www.dhl.com/discover/content/dam/global-master/4-logistics-advice/import-and-export-advice/wec0759-what-is-logistics/Mobile_Image_991x558.jpg',
+     icon: 'fas fa-truck-monster',
+    link: '',
+  },
   {
-    title: 'Crop and Cattle ',
+    title: 'Agriculture  ',
     description: '',
     image: 'https://africanagribusiness.com/wp-content/uploads/2025/02/irrigation_technology.jpg',
     icon: 'fas fa-seedling',
     link: '',
   },
-  {
-    title: 'IT Projects ',
-    description: 'Custom business websites and web applications built to manage operations and customer-facing services.',
-    image: 'https://www.uws.ac.uk/media/6539/project-management.jpg?width=650&height=650&v=1dada066cf9f370',
-    icon: 'fas fa-laptop-code',
-    link: '/ITProjects',
-  },
+ 
 ];
 
 const STATS = [
