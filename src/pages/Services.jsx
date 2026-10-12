@@ -103,8 +103,7 @@ export default function Services() {
                 <span className="services-hero-tag">WHAT WE OFFER</span>
                 <h1>Our <span className="highlight">Services</span></h1>
                 <p className="services-hero-description">
-                  Integrated infrastructure solutions across energy, mining, agriculture, 
-                  and IT — designed to keep your operations running seamlessly.
+                  Integrated infrastructure solutions across  IT, energy, mining, logistics and agriculture — designed to keep your operations running seamlessly.
                 </p>
                 <div className="services-hero-buttons">
                   <a href="#services-grid" className="btn btn-primary">

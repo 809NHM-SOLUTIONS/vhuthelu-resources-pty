@@ -56,8 +56,7 @@ export default function Projects() {
                 <span className="services-hero-tag">WHAT WE'VE DELIVERED</span>
                 <h1>Our <span className="highlight">Projects</span></h1>
                 <p className="services-hero-description">
-                  Integrated infrastructure solutions across energy, mining, agriculture,
-                  and IT — delivered on the ground, on time, and built to last.
+                  Integrated infrastructure solutions across IT, energy, mining, logistics and agriculture — delivered on the ground, on time, and built to last.
                 </p>
                 <div className="services-hero-buttons">
                   <a href="#projects-grid" className="btn btn-primary">
