@@ -41,7 +41,7 @@ import './Services.css';
 const SECTORS = [
    {
     title: 'Information Technology',
-    description: 'Web, software, IoT for agriculture , we build what moves you forward.',
+    description: 'Web, Software, Graphic Design, we build what moves you forward.',
     image: 'https://www.tutorialspoint.com/basics_of_computer_science/images/programmer.jpg',
     icon: 'fas fa-laptop-code',
     link: '/ITServices'
