@@ -10,8 +10,12 @@ function Header() {
     setIsMenuOpen(!isMenuOpen);
   };
 
+ // const closeMenu = () => {
+   // setIsMenuOpen(false);
+  //};
   const closeMenu = () => {
     setIsMenuOpen(false);
+    window.scrollTo({ top: 0, behavior: "instant" });
   };
 
   return (
@@ -24,10 +28,7 @@ function Header() {
             alt="VHUTHELU Resources" 
             className="header-logo" 
           />
-          <div className="brand-text">
-            <span className="brand-name">VHUTHELU</span>
-            <span className="brand-subtitle">RESOURCES (PTY) Ltd</span>
-          </div>
+        
         </NavLink>
 
         {/* Mobile Hamburger Button */}

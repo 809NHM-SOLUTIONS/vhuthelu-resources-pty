@@ -12,24 +12,29 @@ import MiningSupport from './pages/MiningSupport';
 import FuelEnergy from './pages/FuelEnergy';
 import ITProjects from "./pages/ITProjects";
 import Logistics from "./pages/Logistics";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/services" element={<Services />} />
-      <Route path="/contact" element={<Contact />} />
-      <Route path="/projects" element={<Projects />} />
-      <Route path="/partnership" element={<Partnership/>} />
-      <Route path="/ITServices" element={<ITServices />} />
-      <Route path="/CropCattleServices" element={<CropCattleServices />} /> 
-     <Route path="/MiningSupport" element={<MiningSupport />} />
-      <Route path="/FuelEnergy" element={<FuelEnergy />} />
-      <Route path="/ITProjects" element={<ITProjects />} />
-      <Route path="/Logistics" element={<Logistics />} />
-
-    </Routes>
+    <>
+      {/* ScrollToTop works here because main.jsx already wraps App in a Router */}
+      <ScrollToTop />
+      
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/partnership" element={<Partnership />} />
+        <Route path="/ITServices" element={<ITServices />} />
+        <Route path="/CropCattleServices" element={<CropCattleServices />} /> 
+        <Route path="/MiningSupport" element={<MiningSupport />} />
+        <Route path="/FuelEnergy" element={<FuelEnergy />} />
+        <Route path="/ITProjects" element={<ITProjects />} />
+        <Route path="/Logistics" element={<Logistics />} />
+      </Routes>
+    </>
   );
 }
 

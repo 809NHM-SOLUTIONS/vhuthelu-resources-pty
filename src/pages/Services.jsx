@@ -76,7 +76,10 @@ const SECTORS = [
   },
  
 ];
-
+ const closeMenu = () => {
+    setIsMenuOpen(false);
+    window.scrollTo({ top: 0, behavior: "instant" });
+  };
 
 
 const STATS = [
