@@ -54,7 +54,7 @@ const SECTORS = [
     link: '/FuelEnergy'
   },
   {
-    title: 'Mining Support',
+    title: 'Mining Operation',
     description: 'On-site fuel depots, logistics & inventory control for remote mines.',
     image: 'https://internationalbanker.com/wp-content/uploads/2023/08/Mining.png',
     icon: 'fas fa-truck-monster',
