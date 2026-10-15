@@ -420,6 +420,44 @@
   }
 }
 
+/* Website Design Credit */
+.footer-designed-by {
+  text-align: center;
+  margin-top: 20px;
+  padding: 16px 10px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.footer-designed-by p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.footer-designed-by a {
+  color: inherit;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-designed-by a:hover {
+  color: #c9a15b;
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .footer-designed-by {
+    margin-top: 16px;
+    padding-top: 14px;
+  }
+
+  .footer-designed-by p {
+    font-size: 12px;
+  }
+}
+
 /* ===== Hover Effects ===== */
 .footer-section:hover .footer-heading::after {
   width: 60px;
