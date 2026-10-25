@@ -55,7 +55,7 @@ function Home() {
                     Contact Us →
                 </a>
                 <br />
-                <a href="/about" className="btn btn-outline">
+                <a href="/projects" className="btn btn-outline">
                   <i className="fas fa-play-circle"></i> Watch Our Story
                 </a>
               </div>
