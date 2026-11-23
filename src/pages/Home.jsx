@@ -1,9 +1,8 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import "./Home.css";
-import Hero1 from "../assets/cattle.jpg";
-import Hero2 from "../assets/crop.jpg";
 
 
 const heroImages = [
@@ -48,16 +47,16 @@ function Home() {
                Vhuthelu Resources (PTY) Ltd provides innovative and sustainable solutions that empower businesses, communities and industries to grow responsibly.
               </p>
               <div className="hero-buttons">
-                <a href="/services" className="btn btn-primary">
+                <Link to="/services" className="btn btn-primary">
                   Explore Our Services →
-                </a>
-                <a href="/contact" className="btn btn-primary">
+                </Link>
+                <Link to="/contact" className="btn btn-primary">
                     Contact Us →
-                </a>
+                </Link>
                 <br />
-                <a href="/projects" className="btn btn-outline">
+                <Link to="/projects" className="btn btn-outline">
                   <i className="fas fa-play-circle"></i> Watch Our Story
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -109,9 +108,9 @@ function Home() {
               Vhuthelu Resources (Pty) Ltd is a 100% Black-owned South African multi-sector enterprise dedicated to driving sustainable operational growth through practical, industry-focused solutions. Combining expertise in Information Technology with strong capabilities in bulk fuel and energy supply, specialized mining support, logistics, and crop and cattle farming, we empower organizations to enhance productivity, optimize operations, and build long-term digital and industrial capability.
             </p>
             <div className="text-center">
-              <a href="/about" className="btn btn-secondary">
+              <Link to="/about" className="btn btn-secondary">
                 Learn More →
-              </a>
+              </Link>
             </div>
           </div>
         </section>

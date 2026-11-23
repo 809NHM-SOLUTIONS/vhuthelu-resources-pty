@@ -119,7 +119,7 @@ const ITProjects = () => {
                   </div>
                   <div className="project-card-footer">
                     <a 
-                      href="https://hire-sprout-frontend.vercel.app/"
+                      href="https://www.hiresprout.co.za/"
                       target="_blank" 
                       rel="noopener noreferrer" 
                       className="project-btn"
